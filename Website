@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Analytics Expert - Professional Statistical Analysis Services</title>
+    <meta name="description" content="Professional data analytics and statistical analysis services. Expert in Python, R, and SQL for business intelligence and data-driven insights.">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --accent-color: #e74c3c;
+            --text-dark: #2c3e50;
+            --text-light: #7f8c8d;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+        }
+
+        .hero-section {
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            color: white;
+            padding: 100px 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M 10 0 L 0 0 0 10" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="0.5"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>');
+            opacity: 0.3;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .section-padding {
+            padding: 80px 0;
+        }
+
+        .service-card {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            height: 100%;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+        }
+
+        .service-icon {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, var(--secondary-color), var(--accent-color));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            color: white;
+            font-size: 2rem;
+        }
+
+        .case-study-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .case-study-card:hover {
+            transform: scale(1.02);
+        }
+
+        .case-study-image {
+            height: 200px;
+            background: linear-gradient(45deg, var(--secondary-color), var(--primary-color));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 3rem;
+        }
+
+        .stats-section {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+        }
+
+        .stat-item {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .stat-number {
+            font-size: 3rem;
+            font-weight: bold;
+            color: var(--secondary-color);
+            display: block;
+        }
+
+        .cta-section {
+            background: linear-gradient(135deg, var(--accent-color) 0%, #c0392b 100%);
+            color: white;
+        }
+
+        .btn-custom {
+            background: var(--secondary-color);
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            border-radius: 25px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .btn-custom:hover {
+            background: var(--primary-color);
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        .navbar-custom {
+            background: rgba(44, 62, 80, 0.95) !important;
+            backdrop-filter: blur(10px);
+            transition: all 0.3s ease;
+        }
+
+        .navbar-custom.scrolled {
+            background: var(--primary-color) !important;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        @media (max-width: 768px) {
+            .hero-section {
+                padding: 60px 0;
+            }
+            
+            .section-padding {
+                padding: 50px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-custom">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">DataAnalytics Pro</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#case-studies">Case Studies</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#demos">Live Demos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container hero-content">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h1 class="display-4 fw-bold mb-4">Transform Your Data Into Actionable Insights</h1>
+                    <p class="lead mb-4">Professional statistical analysis and data science services using Python, R, and SQL. Turn your business data into competitive advantage.</p>
+                    <div class="d-flex gap-3 flex-wrap">
+                        <a href="#contact" class="btn btn-light btn-lg px-4">Get Started</a>
+                        <a href="#demos" class="btn btn-outline-light btn-lg px-4">View Demos</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 text-center">
+                    <div class="p-4">
+                        <i class="fas fa-chart-line" style="font-size: 200px; opacity: 0.3;"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-6">
+                    <div class="stat-item">
+                        <span class="stat-number">5+</span>
+                        <p class="mb-0">Years Experience</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="stat-item">
+                        <span class="stat-number">50+</span>
+                        <p class="mb-0">Projects Completed</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="stat-item">
+                        <span class="stat-number">25+</span>
+                        <p class="mb-0">Happy Clients</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="stat-item">
+                        <span class="stat-number">98%</span>
+                        <p class="mb-0">Client Satisfaction</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h2 class="display-5 fw-bold mb-4">About Me</h2>
+                    <p class="lead">Bachelor's degree in Statistics with expertise in data analysis, statistical modeling, and business intelligence.</p>
+                    <p>I specialize in transforming raw data into meaningful insights that drive business decisions. With proficiency in Python, R, and SQL, I deliver comprehensive analytics solutions from data cleaning to advanced predictive modeling.</p>
+                    
+                    <div class="row mt-4">
+                        <div class="col-sm-6">
+                            <h5><i class="fab fa-python text-primary me-2"></i>Python</h5>
+                            <p class="small">Pandas, NumPy, Scikit-learn, Plotly</p>
+                        </div>
+                        <div class="col-sm-6">
+                            <h5><i class="fab fa-r-project text-primary me-2"></i>R</h5>
+                            <p class="small">tidyverse, ggplot2, Shiny, caret</p>
+                        </div>
+                        <div class="col-sm-6">
+                            <h5><i class="fas fa-database text-primary me-2"></i>SQL</h5>
+                            <p class="small">PostgreSQL, MySQL, Data Warehousing</p>
+                        </div>
+                        <div class="col-sm-6">
+                            <h5><i class="fas fa-chart-bar text-primary me-2"></i>Statistics</h5>
+                            <p class="small">Hypothesis Testing, Regression, ML</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="p-4 bg-light rounded-3">
+                        <h4 class="mb-3">Certifications & Education</h4>
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><i class="fas fa-graduation-cap text-primary me-2"></i>Bachelor's in Statistics</li>
+                            <li class="mb-2"><i class="fas fa-certificate text-primary me-2"></i>Statistical Analysis Certification</li>
+                            <li class="mb-2"><i class="fas fa-certificate text-primary me-2"></i>Python for Data Science</li>
+                            <li class="mb-2"><i class="fas fa-certificate text-primary me-2"></i>Advanced SQL for Analytics</li>
+                        </ul>
+                        
+                        <h4 class="mb-3 mt-4">Industries Served</h4>
+                        <div class="d-flex flex-wrap">
+                            <span class="badge bg-primary me-2 mb-2">E-commerce</span>
+                            <span class="badge bg-primary me-2 mb-2">Healthcare</span>
+                            <span class="badge bg-primary me-2 mb-2">Finance</span>
+                            <span class="badge bg-primary me-2 mb-2">Marketing</span>
+                            <span class="badge bg-primary me-2 mb-2">SaaS</span>
+                            <span class="badge bg-primary me-2 mb-2">Retail</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section-padding bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold">Services</h2>
+                <p class="lead">Comprehensive data analytics solutions tailored to your business needs</p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-broom"></i>
+                        </div>
+                        <h4 class="text-center mb-3">Data Cleaning & Preparation</h4>
+                        <p class="text-center">Transform messy data into clean, analysis-ready datasets. Handle missing values, outliers, and data quality issues.</p>
+                        <ul class="list-unstyled">
+                            <li><i class="fas fa-check text-success me-2"></i>Data quality assessment</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Missing data imputation</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Outlier detection</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Data standardization</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-chart-pie"></i>
+                        </div>
+                        <h4 class="text-center mb-3">Exploratory Data Analysis</h4>
+                        <p class="text-center">Uncover patterns, trends, and insights in your data through comprehensive statistical analysis and visualization.</p>
+                        <ul class="list-unstyled">
+                            <li><i class="fas fa-check text-success me-2"></i>Statistical summaries</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Data visualization</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Correlation analysis</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Pattern identification</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h4 class="text-center mb-3">Predictive Modeling</h4>
+                        <p class="text-center">Build machine learning models to forecast trends, classify data, and make data-driven predictions.</p>
+                        <ul class="list-unstyled">
+                            <li><i class="fas fa-check text-success me-2"></i>Regression analysis</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Classification models</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Time series forecasting</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Model validation</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h4 class="text-center mb-3">Customer Analytics</h4>
+                        <p class="text-center">Understand your customers better through segmentation, behavior analysis, and lifetime value calculations.</p>
+                        <ul class="list-unstyled">
+                            <li><i class="fas fa-check text-success me-2"></i>Customer segmentation</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Churn prediction</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Lifetime value analysis</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Behavior analysis</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-vial"></i>
+                        </div>
+                        <h4 class="text-center mb-3">A/B Testing</h4>
+                        <p class="text-center">Design and analyze experiments to make data-driven decisions about product changes and marketing strategies.</p>
+                        <ul class="list-unstyled">
+                            <li><i class="fas fa-check text-success me-2"></i>Experiment design</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Statistical significance testing</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Power analysis</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Results interpretation</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-tachometer-alt"></i>
+                        </div>
+                        <h4 class="text-center mb-3">Interactive Dashboards</h4>
+                        <p class="text-center">Create dynamic dashboards and reports that provide real-time insights and enable self-service analytics.</p>
+                        <ul class="list-unstyled">
+                            <li><i class="fas fa-check text-success me-2"></i>Custom dashboards</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Real-time data updates</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Interactive visualizations</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Automated reporting</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Case Studies Section -->
+    <section id="case-studies" class="section-padding">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold">Case Studies</h2>
+                <p class="lead">Real projects delivering measurable business impact</p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="case-study-card">
+                        <div class="case-study-image">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        <div class="p-4">
+                            <h4>E-commerce Customer Segmentation</h4>
+                            <p class="text-muted">Increased marketing ROI by 35% through targeted customer segmentation analysis for online retailer.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <small class="text-muted">E-commerce • 6 weeks</small>
+                                <a href="#" class="btn btn-outline-primary btn-sm">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="case-study-card">
+                        <div class="case-study-image">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div class="p-4">
+                            <h4>Sales Forecasting Model</h4>
+                            <p class="text-muted">Improved inventory planning accuracy by 28% with time series forecasting for manufacturing company.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <small class="text-muted">Manufacturing • 4 weeks</small>
+                                <a href="#" class="btn btn-outline-primary btn-sm">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="case-study-card">
+                        <div class="case-study-image">
+                            <i class="fas fa-heartbeat"></i>
+                        </div>
+                        <div class="p-4">
+                            <h4>Healthcare Analytics Dashboard</h4>
+                            <p class="text-muted">Reduced patient wait times by 22% through operational analytics dashboard for medical practice.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <small class="text-muted">Healthcare • 8 weeks</small>
+                                <a href="#" class="btn btn-outline-primary btn-sm">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Live Demos Section -->
+    <section id="demos" class="section-padding bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold">Interactive Demos</h2>
+                <p class="lead">Try our analytics tools with sample data</p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="card h-100 border-0 shadow">
+                        <div class="card-body text-center">
+                            <i class="fas fa-upload fa-3x text-primary mb-3"></i>
+                            <h4>Data Analysis Demo</h4>
+                            <p>Upload your CSV file and get instant basic analytics and visualizations.</p>
+                            <a href="#" class="btn btn-primary" onclick="alert('Demo would be deployed on Streamlit Cloud')">Try Demo</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4">
+                    <div class="card h-100 border-0 shadow">
+                        <div class="card-body text-center">
+                            <i class="fas fa-users fa-3x text-primary mb-3"></i>
+                            <h4>Customer Segmentation</h4>
+                            <p>See how customer segmentation works with sample e-commerce data.</p>
+                            <a href="#" class="btn btn-primary" onclick="alert('Demo would be deployed on Streamlit Cloud')">Try Demo</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4">
+                    <div class="card h-100 border-0 shadow">
+                        <div class="card-body text-center">
+                            <i class="fas fa-chart-area fa-3x text-primary mb-3"></i>
+                            <h4>Sales Forecasting</h4>
+                            <p>Interactive time series forecasting with your sales data.</p>
+                            <a href="#" class="btn btn-primary" onclick="alert('Demo would be deployed on Streamlit Cloud')">Try Demo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section section-padding">
+        <div class="container text-center">
+            <h2 class="display-5 fw-bold mb-4">Ready to Transform Your Data?</h2>
+            <p class="lead mb-4">Let's discuss how data analytics can drive your business growth</p>
+            <a href="#contact" class="btn btn-light btn-lg px-5">Start Your Project</a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="text-center mb-5">
+                        <h2 class="display-5 fw-bold">Get In Touch</h2>
+                        <p class="lead">Ready to start your data analytics project?</p>
+                    </div>
+                    
+                    <form id="contactForm">
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label for="name" class="form-label">Name *</label>
+                                <input type="text" class="form-control" id="name" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="email" class="form-label">Email *</label>
+                                <input type="email" class="form-control" id="email" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="company" class="form-label">Company</label>
+                                <input type="text" class="form-control" id="company">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="budget" class="form-label">Project Budget</label>
+                                <select class="form-select" id="budget">
+                                    <option>Under $1,000</option>
+                                    <option>$1,000 - $5,000</option>
+                                    <option>$5,000 - $10,000</option>
+                                    <option>$10,000+</option>
+                                </select>
+                            </div>
+                            <div class="col-12">
+                                <label for="service" class="form-label">Service Needed</label>
+                                <select class="form-select" id="service">
+                                    <option>Data Cleaning & Preparation</option>
+                                    <option>Exploratory Data Analysis</option>
+                                    <option>Predictive Modeling</option>
+                                    <option>Customer Analytics</option>
+                                    <option>A/B Testing</option>
+                                    <option>Dashboard Creation</option>
+                                    <option>Custom Project</option>
+                                </select>
+                            </div>
+                            <div class="col-12">
+                                <label for="message" class="form-label">Project Description *</label>
+                                <textarea class="form-control" id="message" rows="5" placeholder="Tell me about your data and what insights you're looking for..." required></textarea>
+                            </div>
+                            <div class="col-12 text-center">
+                                <button type="submit" class="btn btn-custom btn-lg px-5">Send Message</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-4">
+        <div class="container">
+            <div class="text-center">
+                <p class="mb-2">&copy; 2024 DataAnalytics Pro. All rights reserved.</p>
+                <p class="mb-0">
+                    <a href="mailto:contact@dataanalyticspro.com" class="text-light me-3"><i class="fas fa-envelope me-1"></i>contact@dataanalyticspro.com</a>
+                    <a href="tel:+1234567890" class="text-light me-3"><i class="fas fa-phone me-1"></i>(123) 456-7890</a>
+                    <a href="#" class="text-light"><i class="fab fa-linkedin me-1"></i>LinkedIn</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Navbar scroll effect
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar-custom');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Contact form handling
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form data
+            const formData = {
+                name: document.getElementById('name').value,
+                email: document.getElementById('email').value,
+                company: document.getElementById('company').value,
+                budget: document.getElementById('budget').value,
+                service: document.getElementById('service').value,
+                message: document.getElementById('message').value
+            };
+            
+            // Here you would typically send the data to your backend
+            alert('Thank you for your message! I\'ll get back to you within 24 hours.');
+            
+            // Reset form
+            this.reset();
+        });
+
+        // Animate stats on scroll
+        const observerOptions = {
+            threshold: 0.5,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const statNumbers = entry.target.querySelectorAll('.stat-number');
+                    statNumbers.forEach(stat => {
+                        const target = parseInt(stat.textContent);
+                        let current = 0;
+                        const increment = target / 20;
+                        const timer = setInterval(() => {
+                            current += increment;
+                            if (current >= target) {
+                                stat.textContent = target + (stat.textContent.includes('%') ? '%' : '+');
+                                clearInterval(timer);
+                            } else {
+                                stat.textContent = Math.floor(current) + (stat.textContent.includes('%') ? '%' : '+');
+                            }
+                        }, 100);
+                    });
+                }
+            });
+        }, observerOptions);
+
+        const statsSection = document.querySelector('.stats-section');
+        if (statsSection) {
+            observer.observe(statsSection);
+        }
+    </script>
+</body>
+</html>
